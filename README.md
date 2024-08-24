@@ -4,7 +4,7 @@ Scripts to understand shell and bash scripting.<br>
 /bin/bash (shell) ==> For Shell Scripting<br>
 **Note:-** <br>
 **Even though if we are using /bin/sh interpretor will execute all the commands in bash shell.**
-#### Example: Write a shell script to automate the given task
+## Example: Write a shell script to automate the given task
 1.Create Directory<br>
 2.To know the list of the contents<br>
 3.Create a File<br>

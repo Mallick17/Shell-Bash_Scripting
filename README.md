@@ -29,3 +29,52 @@ automate.sh  demo  demo.txt<br>
 /root<br>
 root<br>
 09:27:32 up 2 min,  1 user,  load average: 0.03, 0.05, 0.02
+
+### Variables
+**Variables are the named memory location which is used.** <br>
+**1. Environment Variables**<br>
+**2. System Variables**<br>
+**3. User-Defined Variables**<br>
+
+## Environment Variables
+**These are the special variables that holds information about system environment.** <br>
+```sh
+#!bin/bash
+echo " *-*-*Script Starts*-*-* "
+echo $HOME
+echo $USER
+echo $PATH
+echo $PWD
+echo $SHELL
+echo $TERM
+echo " *-*-*Script Ends*-*-* "
+```
+**Output**<br>
+ *-*-*Script Starts*-*-*<br>
+/root<br>
+root<br>
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin<br>
+/root<br>
+/bin/bash<br>
+xterm<br>
+ *-*-*Script Ends*-*-*
+## System Variables
+**These are the subset of environment variables that provides the information about system configuration.** <br>
+```sh
+#!bin/bash
+echo " *-*-*Script Starts*-*-* "
+echo $HOSTNAME
+echo $OSTYPE
+echo $MACHTYPE
+echo $UID
+echo $LOGNAME
+echo " *-*-*Script Ends*-*-* "
+```
+**Output**<br>
+ *-*-*Script Starts*-*-*<br>
+shellbash<br>
+linux-gnu<br>
+x86_64-koji-linux-gnu<br>
+0<br>
+root<br>
+ *-*-*Script Ends*-*-*

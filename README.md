@@ -30,14 +30,14 @@ automate.sh  demo  demo.txt<br>
 root<br>
 09:27:32 up 2 min,  1 user,  load average: 0.03, 0.05, 0.02
 
-### Variables
-**Variables are the named memory location which is used.** <br>
-**1. Environment Variables**<br>
-**2. System Variables**<br>
-**3. User-Defined Variables**<br>
+# Variables
+  **Variables are the named memory location which is used.** <br>
+  **1. Environment Variables**<br>
+  **2. System Variables**<br>
+  **3. User-Defined Variables**<br>
 
 ## Environment Variables
-**These are the special variables that holds information about system environment.** <br>
+  **These are the special variables that holds information about system environment.** <br>
 ```sh
 #!bin/bash
 echo " *-*-*Script Starts*-*-* "

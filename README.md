@@ -118,7 +118,7 @@ Enter Mobile Cost<br>
 ```14,599/-```<br>
 Enter Model Name<br>
 ```POCO_M4```<br>
-Enter Mobile Color
+Enter Mobile Color<br>
 ```Blue```<br>
 The mobile model is POCO_M4<br>
 The cost of the phone is 14,599/-<br>

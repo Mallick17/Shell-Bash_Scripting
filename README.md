@@ -1,6 +1,5 @@
-# Shell-Bash_Scripting
+# Bash is a default type of shell
 Scripts to understand shell and bash scripting.<br>
-**Bash is a default type of shell**.<br>
 \bin\bash (exact) ==> For Bash Scritping<br>
 /bin/bash (shell) ==> For Shell Scripting<br>
 **Note:-** <br>

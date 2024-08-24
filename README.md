@@ -78,3 +78,52 @@ x86_64-koji-linux-gnu<br>
 0<br>
 root<br>
  *-*-*Script Ends*-*-*
+## User-Defined Variables
+**1. Static User-Defined Model to print the given data inside the script.**
+```sh
+#!/bin/bash
+echo "Start Point"
+mobilecost=15,699/-
+modelname=POCO_M4
+mobilecolor=Blue
+echo "The mobile model is $modelname ."
+echo "The cost of the phone is $mobilecost ."
+echo "The color of my phone is $mobilecolor ."
+echo "End Point"
+```
+**Output**<br>
+Start Point<br>
+The mobile model is POCO_M4 .<br>
+The cost of the phone is 15,699/- .<br>
+The color of my phone is Blue .<br>
+End Point<br>
+**2. Static User-Defined Model to print the given data outside the script.**
+```sh
+#!/bin/bash
+echo "Start Point"
+echo "Enter Mobile Cost"
+read mobilecost
+echo "Enter Model Name"
+read modelname
+echo "Enter Mobile Color"
+read mobilecolor
+echo "The mobile model is $modelname"
+echo "The cost of the phone is $mobilecost"
+echo "The color of my phone is $mobilecolor"
+echo "End Point"
+```
+**Output**
+Start Point<br>
+Enter Mobile Cost<br>
+```14,599/-```<br>
+Enter Model Name<br>
+```POCO_M4```<br>
+Enter Mobile Color
+```Blue```<br>
+The mobile model is POCO_M4<br>
+The cost of the phone is 14,599/-<br>
+The color of my phone is Blue<br>
+End Point
+
+
+

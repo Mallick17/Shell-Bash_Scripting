@@ -125,7 +125,7 @@ The cost of the phone is 14,599/-<br>
 The color of my phone is Blue<br>
 End Point<br>
 **Note:** <br>
-**1. Single Quotes wont allow the outisde data.**
+**1. Single Quotes wont allow the outisde data.**<br>
 **2. Double Quotes will allow the outside data.**
 
 

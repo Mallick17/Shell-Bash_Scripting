@@ -1,10 +1,10 @@
 # Shell-Bash_Scripting
-Scripts to understand shell and bash scripting.
+Scripts to understand shell and bash scripting.<br>
 **Bash is a default type of shell**.<br>
 \bin\bash (exact) ==> For Bash Scritping<br>
 /bin/bash (shell) ==> For Shell Scripting<br>
-**Note:-**
-Even though if we are using /bin/sh interpretor will execute all the commands in bash shell
+**Note:-** <br>
+**Even though if we are using /bin/sh interpretor will execute all the commands in bash shell.**
 #### Example: Write a shell script to automate the given task
 1.Create Directory<br>
 2.To know the list of the contents<br>
@@ -123,7 +123,9 @@ Enter Mobile Color<br>
 The mobile model is POCO_M4<br>
 The cost of the phone is 14,599/-<br>
 The color of my phone is Blue<br>
-End Point
-
+End Point<br>
+**Note:** <br>
+**1. Single Quotes wont allow the outisde data.**
+**2. Double Quotes will allow the outside data.**
 
 

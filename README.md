@@ -111,7 +111,7 @@ echo "The cost of the phone is $mobilecost"
 echo "The color of my phone is $mobilecolor"
 echo "End Point"
 ```
-**Output**
+**Output** <br>
 Start Point<br>
 Enter Mobile Cost<br>
 ```14,599/-```<br>
@@ -126,5 +126,12 @@ End Point<br>
 **Note:** <br>
 **1. Single Quotes wont allow the outisde data.**<br>
 **2. Double Quotes will allow the outside data.**
+
+## Functions
+**Functions will execute whenever it is called to execute.**
+|        Static             |          Dynamic          |
+| ---------------------------- | ---------------------- |
+| #!/bin/bash<br>echo "******Starts******"<br>mul()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****}  | Content Cell  |
+| #!/bin/bash<br>echo "******Starts******"<br>div()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a/b/c))<br>echo "div of $a & $b & $c is $d"<br>}<br>div<br>echo "******End*****"| Content Cell  |
 
 

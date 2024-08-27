@@ -287,3 +287,55 @@ Enter b value<br>
 ```50```<br>
 50 is equals to 50<br>
 end
+# Looping Statements
+## for loop
+```
+#!/bin/bash
+echo "start"
+for i in {1..10}
+do
+  echo "enter: $i"
+done
+echo "end"
+```
+*output*<br>
+start<br>
+enter: 1<br>
+enter: 2<br>
+enter: 3<br>
+enter: 4<br>
+enter: 5<br>
+enter: 6<br>
+enter: 7<br>
+enter: 8<br>
+enter: 9<br>
+enter: 10<br>
+end<br>
+
+## while loop
+```
+#!/bin/bash
+echo "start"
+init=1
+while [[ $init -le 10 ]]
+do
+  echo "the value: $init"
+  ((init++))
+done
+echo "end"
+```
+*output*<br>
+start<br>
+the value: 1<br>
+the value: 2<br>
+the value: 3<br>
+the value: 4<br>
+the value: 5<br>
+the value: 6<br>
+the value: 7<br>
+the value: 8<br>
+the value: 9<br>
+the value: 10<br>
+end
+
+

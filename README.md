@@ -131,7 +131,7 @@ End Point<br>
 **Functions will execute whenever it is called to execute.**
 |        Static             |          Dynamic          |
 | ---------------------------- | ---------------------- |
-| #!/bin/bash<br>echo "******Starts******"<br>mul()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****}  | Content Cell  |
-| #!/bin/bash<br>echo "******Starts******"<br>div()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a/b/c))<br>echo "div of $a & $b & $c is $d"<br>}<br>div<br>echo "******End*****"| Content Cell  |
+| #!/bin/bash<br>echo "******Starts******"<br>mul()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****"  |  echo "******Starts******"<br>echo "Enter a value"<br>read a<br>echo "Enter b value"<br>read b<br>echo "Enter C value"<br>read c<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****" |
+| #!/bin/bash<br>echo "******Starts******"<br>div()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a/b/c))<br>echo "div of $a & $b & $c is $d"<br>}<br>div<br>echo "******End*****"| #!/bin/bash<br>echo "******Starts******"<br>echo "Enter a value"<br>read a<br>echo "Enter b value"<br>read b<br>echo "Enter C value"<br>read c<br>d=$((a/b/c))<br>echo "Div of $a & $b & $c is $d"<br>echo "******End*****"  |
 
 

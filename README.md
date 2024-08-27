@@ -183,7 +183,7 @@ read b
 sum a b
 echo "end"
 ```
-_Output_
+_Output_<br>
 starts<br>
 the file name: parameterdynamic.sh<br>
 Enter a value<br>

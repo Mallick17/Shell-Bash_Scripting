@@ -337,5 +337,208 @@ the value: 8<br>
 the value: 9<br>
 the value: 10<br>
 end
+# Scripts
+### Write A Script(WAS) to execute multiplication tables
+```
+#!/bin/bash
+echo "start"
+echo "Enter value"
+read num
+for i in {1..10}
+do
+        echo "$num * $i = $((num*i))"
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+Enter value<br>
+```8```<br>
+8 * 1 = 8<br>
+8 * 2 = 16<br>
+8 * 3 = 24<br>
+8 * 4 = 32<br>
+8 * 5 = 40<br>
+8 * 6 = 48<br>
+8 * 7 = 56<br>
+8 * 8 = 64<br>
+8 * 9 = 72<br>
+8 * 10 = 80<br>
+end
+
+### Write A Script(WAS) to find files
+```
+#!/bin/bash
+if [[ -f ./forloop.sh ]]
+then
+        echo "the file exists"
+else
+        echo "the file doesnt exist"
+fi
+echo "end"
+```
+*Output*<br>
+the file exists<br>
+end<br>
+
+### Write A Script(WAS) to check directories
+```
+#!/bin/bash
+if [[ -d ./sprint ]]
+then
+        echo "the directory exists"
+else
+        echo "the dir doesnt exist"
+fi
+echo "end"
+```
+*Output*<br>
+the dir doesnt exist<br>
+end<br>
+
+### Write A Script(WAS) to check the services weather GIT is installed.
+```
+#!/bin/bash
+echo "Start"
+if command -v git
+then
+        echo "Git is installed"
+else
+        echo "Git is not installed"
+fi
+echo "end"
+```
+*Output*<br>
+Start<br>
+Git is not installed<br>
+end<br>
+### Write A Script(WAS) to display all the files in the current directory.
+```
+#!/bin/bash
+echo "start"
+for i in *
+do
+  echo "$i"
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+elseif.sh<br>
+finddir.sh<br>
+findfiles.sh<br>
+forloop.sh<br>
+if1.sh<br>
+ifdynamic.sh<br>
+tables.sh<br>
+while.sh<br>
+end<br>
+### Write A Script(WAS) to display the files with specific extensions.
+```
+#!/bin/bash
+echo "start"
+for i in *".sh"
+do
+  echo "$i"
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+elseif.sh<br>
+finddir.sh<br>
+findfiles.sh<br>
+forloop.sh<br>
+tables.sh<br>
+while.sh<br>
+end<br>
+### Write A Script(WAS) to fetch files from given path (.conf)
+```
+#!/bin/bash
+#cd etc/
+echo "start"
+for i in /etc/* .conf
+do
+  echo "$i"
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+/etc/acpi<br>
+/etc/adjtime<br>
+/etc/aliases<br>
+/etc/aliases.db<br>
+/etc/alternatives<br>
+/etc/amazon<br>
+/etc/bash_completion.d<br>
+/etc/bashrc<br>
+/etc/binfmt.d<br>
+.conf<br>
+end
+### Write A Script(WAS) to count the files
+```
+#!/bin/bash
+echo "start"
+count=1
+for i in /etc/* .conf
+do
+  echo "$i"
+  ((count++))
+done
+echo "the total count is: $count"
+echo "end"
+```
+*Output*
+start<br>
+/etc/acpi<br>
+/etc/adjtime<br>
+/etc/aliases<br>
+/etc/aliases.db<br>
+/etc/alternatives<br>
+/etc/amazon<br>
+/etc/yum.repos.d<br>
+.conf<br>
+the total count is: 191<br>
+end<br>
+
+### Write A Script(WAS) to copy files from one directory to another directory.
+```
+#!/bin/bash
+echo "start"
+src=/etc/*.conf
+dest=/root/demo
+for i in $src
+do
+        cp $src $dest
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+end<br>
+
+### Write A Script(WAS) to move from one directory to other directory
+```
+#!/bin/bash
+echo "start"
+src=/root/demomv
+dest=/root/demo
+for i in $src
+do
+        mv $src $dest
+done
+echo "end"
+```
+*Output*<br>
+start<br>
+end<br>
+
+### Write A Script(WAS) to move the files from one directory to other directory
+```
+
+
+
+
 
 

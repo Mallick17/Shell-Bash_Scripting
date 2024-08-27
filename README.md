@@ -192,3 +192,98 @@ Enter b value<br>
 ```40```<br>
 sum of a & b is: 90<br>
 end
+# Conditions
+## If condition
+**Static**
+```
+#!/bin/bash
+echo "start"
+a=20
+b=30
+if [[ $a -lt $b ]]
+then
+        echo "$a is lesser then $b"
+fi
+echo "end"
+```
+*Output*<br>
+start<br>
+20 is lesser then 30<br>
+end<br>
+<br>
+**Dynamic**
+```
+#!/bin/bash
+echo "start"
+echo "Enter a value"
+read a
+echo "Enter b value"
+read b
+if [[ $a -lt $b ]]
+then
+        echo "$a is lesser then $b"
+fi
+echo "end"
+```
+*Output*<br>
+start<br>
+Enter a value<br>
+```20```<br>
+Enter b value<br>
+```30```<br>
+20 is lesser then 30<br>
+end
+## if else condition
+**Dynamic**
+```
+#!/bin/bash
+echo "start"
+echo "Enter a value"
+read a
+echo "Enter b value"
+read b
+if [[ $a -lt $b ]]
+then
+        echo "$a is lesser than $b"
+else
+        echo "$a is greater than $b"
+fi
+echo "end"
+```
+*Output*<br>
+start<br>
+Enter a value<br>
+```20```<br>
+Enter b value<br>
+```60```<br>
+20 is lesser than 60<br>
+end<br>
+
+## else if condition
+**Dynamic**
+```
+#!/bin/bash
+echo "start"
+echo "Enter a value"
+read a
+echo "Enter b value"
+read b
+if [[ $a -lt $b ]]
+then
+        echo "$a is lesser than $b"
+elif [[ $a -gt $b ]]
+then
+        echo "$a is greater than $b"
+else
+        echo "$a is equals to $b"
+fi
+echo "end"
+```
+*Output*<br>
+start<br>
+Enter a value<br>
+```50```<br>
+Enter b value<br>
+```50```<br>
+50 is equals to 50<br>
+end

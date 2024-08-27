@@ -133,5 +133,62 @@ End Point<br>
 | ---------------------------- | ---------------------- |
 | #!/bin/bash<br>echo "******Starts******"<br>mul()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****"  |  echo "******Starts******"<br>echo "Enter a value"<br>read a<br>echo "Enter b value"<br>read b<br>echo "Enter C value"<br>read c<br>d=$((a*b*c))<br>echo "Mul of $a & $b & $c is $d"<br>echo "******End*****" |
 | #!/bin/bash<br>echo "******Starts******"<br>div()<br>{<br>a=100<br>b=20<br>c=2<br>d=$((a/b/c))<br>echo "div of $a & $b & $c is $d"<br>}<br>div<br>echo "******End*****"| #!/bin/bash<br>echo "******Starts******"<br>echo "Enter a value"<br>read a<br>echo "Enter b value"<br>read b<br>echo "Enter C value"<br>read c<br>d=$((a/b/c))<br>echo "Div of $a & $b & $c is $d"<br>echo "******End*****"  |
+## Method with Parameter
+To receive the parameter we wil use special variables. In shell/bash script we can pass both variables.
+**Static**
+```
+#!/bin/bash
+echo "starts"
+echo "the file name: $0"
+sum() {
+        c=$(($1+$2))
+        echo "sum of $1 & $2 is: $c"
+}
+sum 10 20
+echo "end"
 
-
+echo "starts"
+echo "the file name: $0"
+sum() {
+        c=$(($1+$2))
+        echo "sum of $1 & $2 is: $c"
+}
+a=20
+b=40
+sum a b
+echo "end"
+```
+*Output*<br>
+starts<br>
+the file name: methodparameter.sh<br>
+sum of 10 & 20 is: 30<br>
+end<br>
+starts<br>
+the file name: methodparameter.sh<br>
+sum of a & b is: 60<br>
+end<br>
+**Dynamic**
+```
+#!/bin/bash
+echo "starts"
+echo "the file name: $0"
+sum() {
+        c=$(($1+$2))
+        echo "sum of $1 & $2 is: $c"
+}
+echo "Enter a value"
+read a
+echo "Enter b value"
+read b
+sum a b
+echo "end"
+```
+_Output_
+starts<br>
+the file name: parameterdynamic.sh<br>
+Enter a value<br>
+```50```<br>
+Enter b value<br>
+```40```<br>
+sum of a & b is: 90<br>
+end
